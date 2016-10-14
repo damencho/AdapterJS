@@ -1255,6 +1255,7 @@ if ( (navigator.mozGetUserMedia ||
           '<param name="windowless" value="true" /> ' +
           '<param name="streamId" value="' + streamId + '" /> ' +
           '<param name="tag" value="' + tag + '" /> ' +
+          (AdapterJS.options.getAllCams ? '<param name="forceGetAllCams" value="True" />':'') +
           '</object>';
         while (temp.firstChild) {
           frag.appendChild(temp.firstChild);
